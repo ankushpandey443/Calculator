@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    font-size: calc(13px + 0.39vw);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.overlay{
+    position: absolute;
+    background-color: #333333;
+    width:0%;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: width 300ms linear;
+}
+.showlinkedin{
+    width: 100%;
+}
+.overlay svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    cursor: pointer;
+}
+.overlay svg:hover{
+filter: brightness(0.8);
+}
+.overlay .info{
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.overlay .info:hover .name{
+    filter: brightness(0.5);
+    user-select: none;
+}
+.overlay .info:hover a{
+    color: #dddddd;
+}
+.overlay .info a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+.overlay .info a:hover{
+    filter: brightness(2);
+}
+.overlay .info .name{
+    display: flex;
+    align-items: center;
+}
+.overlay .info img{
+    height: 2rem;
+}
+.container{
+    background-color:#222222;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.leftside{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    width: 150%;
+    min-height: 100vh;
+}
+.rightside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 300px;
+    background-color: #222222;
+    filter: brightness(1.2);
+}
+.leftside .bar{
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #eee;
+}
+.leftside .bar h1{
+    margin-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.visual{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 250px;
+    overflow-y:scroll;
+    color: #eee;
+    font-size: 5rem;
+    scrollbar-width: 0;
+    padding-bottom: 5px;
+}
+
+.visual::-webkit-scrollbar{
+    width: 0;
+}
+.visual p{
+    text-align: end;
+    font-weight: 500;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+}
+.visual .previousnum{
+    font-size: 1rem;
+    filter: brightness(0.5);
+}
+.visual .currentsymbol{
+    font-size: 1rem;
+    filter: brightness(0.8);
+}
+.controlls{
+    width:calc(100%-10px);
+    height: 100%;
+    display: grid;
+    padding: 5px;
+    gap: 3px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.controlls >div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: #333333;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.controlls>div:hover{
+    filter: brightness(1.2);
+}
+
+
+
+
+.controlls div:nth-child(1) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(2) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(3) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(4) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(5) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(6) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(7) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(8) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(12) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(16) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(20) {
+    background-color: #33333388;
+}
+.controlls div:nth-child(21) {
+    background-color: #33333388;
+}
+
+
+
+.controlls div:nth-child(8) p{
+    font-size: 2rem;
+}
+.controlls div:nth-child(20) p{
+    font-size: 2rem;
+}
+.controlls div:nth-child(24) {
+    background-color: #00aaff;
+}
+.controlls div:nth-child(24) p{
+    filter: brightness(0.3);
+    font-size: 2rem;
+}
+.rightside .bar{
+    display: flex;
+    min-height: 50px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.rightside .bar p{
+    position: relative;
+    padding: 10px 10px 0 10px;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #fff;
+}
+.rightside .bar p:nth-child(1){
+    margin-left: 0;
+}
+.rightside .bar p:hover{
+    color:#888888
+}
+.rightside .bar p::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    width: 0px;
+    background-image: linear-gradient(to right,#00dddd,#00aaff);
+    transition: all 1s linear;
+}
+.rightside .bar p:hover::before{
+width: 100%;
+left: 0;
+right: 100%;
+}
+.history{
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 30px;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+}
+.history::-webkit-scrollbar{
+    width: 0;
+}
+.history hr{
+    width: 50%;
+    margin:5px 0px;
+}
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .history hr{
+        width: 100%;
+    }
+    
+}

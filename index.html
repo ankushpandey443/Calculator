@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <svg width="30" height="30">
+            <line x1="0" y1="0" x2="30" y2="30" stroke="#fff" stroke-width="2"/>
+            <line x1="0" y1="30" x2="30" y2="0" stroke="#fff" stroke-width="2"/>
+        </svg>
+        <div class="info">
+            <div class="name"><img src="./src/linkedin.svg" alt="" >Linkedin</div>
+            <a href="https://www.linkedin.com/in/ankushpandey443">@ankushpandey443</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="leftside">
+            <div class="bar">
+                <svg width="24" height="25">
+                    <line x1="0" y1="2" x2="50" y2="2" stroke="#fff" stroke-width="2"/>
+                    <line x1="0" y1="12" x2="50" y2="12" stroke="#fff" stroke-width="2"/>
+                    <line x1="0" y1="22" x2="50" y2="22" stroke="#fff" stroke-width="2"/>
+                </svg>
+                <h1>Standard Calculator</h1>
+            </div>
+            <div class="visual">
+                <p class="previousnum"></p>
+                <p class="currentsymbol"></p>
+                <p class="current">0</p>
+            </div>
+            <div class="controlls">
+                <div class="item1"> <p>%</p></div>
+                <div class="item2" id="clearfull"> <p>CE</p></div>
+                <div class="item3" id="clear"> <p>C</p></div>
+
+                <div class="item4" id="backspace">
+                    <svg width="35" height="25">
+                        <!-- frame -->
+                        <line stroke="#fff" x1="15" x2="33" y1="2" y2="2" stroke-width="2"/>
+                        <line stroke="#fff" x1="33" x2="33" y1="2" y2="23" stroke-width="2"/>
+                        <line stroke="#fff" x1="15" x2="33" y1="23" y2="23" stroke-width="2"/>
+                        <!-- front node like structure -->
+                        <line stroke="#fff" x1="15" x2="7" y1="23" y2="13" stroke-width="2"/>
+                        <line stroke="#fff" x1="15" x2="7" y1="2" y2="13" stroke-width="2"/>
+                        <!-- cross in middle -->
+                        <line stroke="#fff" x1="17" x2="28" y1="8" y2="18" stroke-width="2"/>
+                        <line stroke="#fff" x1="17" x2="28" y1="18" y2="8" stroke-width="2"/>
+                    </svg>
+                </div>
+
+                <div class="item5"> <p>1/x</p></div>
+                <div class="item6" id="square"> <p>x<sup>2</sup> </p></div>
+                <div class="item7"> <p>Sqrt(x)</p></div>
+                <div class="item8"> <p>÷</p></div>
+                <div class="item9"> <p>7</p></div>
+                <div class="item10"><p>8</p></div>
+                <div class="item11"><p>9</p></div>
+                <div class="item12"><p>✕</p></div>
+                <div class="item13"><p>4</p></div>
+                <div class="item14"><p>5</p></div>
+                <div class="item15"><p>6</p></div>
+                <div class="item16"><p>—</p></div>
+                <div class="item17"><p>1</p></div>
+                <div class="item18"><p>2</p></div>
+                <div class="item19"><p>3</p></div>
+                <div class="item20"><p>+</p></div>
+                <div class="item21" title="reverse divide"><p>\</p></div>
+                <div class="item22"><p>0</p></div>
+                <div class="item23"><p>.</p></div>
+                <div class="item24"><p>=</p></div>
+
+                
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="bar">
+                <p>History</p>
+                <p>Memory</p>
+            </div>
+            <div class="history">There is no history yet</div>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
